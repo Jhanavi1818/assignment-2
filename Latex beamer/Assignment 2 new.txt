@@ -1,0 +1,86 @@
+
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Beamer Inbuilt Themes (CambridgeUS)} 
+\author{Kummitha Jhanavi CS21btech11032}
+\date{16 May}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+% Lists frame
+\section{}
+\begin{frame}{Lists in Beamer}
+
+This is an unordered list:
+\begin{itemize}
+    
+    \item Question
+    \item Solution
+    
+\end{itemize}
+
+and this is an ordered list:
+\begin{enumerate}
+    \item Question
+    \item Solution
+    
+\end{enumerate}
+
+\end{frame}
+
+
+% Blocks frame
+\section{Blocks in Beamer}
+\begin{frame}{Blocks in Beamer}
+    \begin{block}{Question}
+    Evaluate $\int$tan^-1$\sqrt{x}dx
+        \end{block}
+    \begin{alertblock}{Solution}
+        \begin{equation}
+    Let I=$\int$tan^-1$\sqrt{x}dx
+\end{equation}
+\begin{align}
+
+    \begin{center}
+    $\implies$  $\int$tan^-1$\sqrt{x}.1dx
+\end{center}
+\begin{center}
+   $\implies$ tan^-1$\sqrt{x}.x -$\int$$\frac{1}{1+x}.xdx
+    \end{center}
+    \begin{center}
+        $\implies$xtan^-1$\sqrt{x}-$\int$$\frac{1+x-1}{1+x}dx
+    \end{center}
+    \begin{center}
+        $\implies$xtan^-1$\sqrt{x}-$\int$$\frac{1+x}{1+x}dx +$\int$$\frac{1}{1+x}dx
+        I = xtan^-1\sqrt{x}-x+log(1+x)+c
+    \end{center}
+    \end{align}
+    \end{alertblock}
+    \begin{exampleblock}{conclusion}
+    
+    \end{exampleblock}
+\end{frame} 
+
+\end{document}
